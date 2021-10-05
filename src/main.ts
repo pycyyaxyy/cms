@@ -1,8 +1,19 @@
 import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import 'normalize.css'
+import './assets/css/index.less'
+import gloableRegister from '@/global'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import { setupStore } from './store'
 
-createApp(App).use(store).use(router).mount('#app')
+const app = createApp(App)
+app.use(gloableRegister)
+app.use(ElementPlus)
+app.use(store)
+setupStore()
+app.use(router)
 
-console.log(1314520);
+app.mount('#app')
