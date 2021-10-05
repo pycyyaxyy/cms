@@ -17,7 +17,7 @@ import { defineComponent, ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useStore } from '@/store/index'
 import UserInfo from './user-info.vue'
-import PeBreadcrumb, { IBreadcrumb } from '@/base-ui/breadcrumb'
+import PeBreadcrumb from '@/base-ui/breadcrumb'
 import { pathMapBreadcrumbs } from '@/utils/map-menus'
 
 export default defineComponent({
