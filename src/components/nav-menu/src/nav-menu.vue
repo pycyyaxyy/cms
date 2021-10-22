@@ -2,7 +2,7 @@
   <div class="nav-menu">
     <div class="logo">
       <img class="img" src="~@/assets/img/logo.svg" alt="logo" />
-      <span v-if="!collapse" class="title">CMS</span>
+      <span v-if="!collapse" class="title">pepe-CMS</span>
     </div>
     <el-menu
       :default-active="defaultValue"
